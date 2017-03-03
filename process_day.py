@@ -6,6 +6,10 @@ import math
 import pandas as pd
 import io
 
+#analyse count of missing data : http://stackoverflow.com/questions/23530665/count-the-number-of-observations-that-occur-per-day
+# df['date'] = pd.to_datetime(df['date'])
+# df.set_index('date').resample('D', 'count')
+
 # Create a 1024x1024x3 array of 8 bit unsigned integers
 data = np.zeros( (100,1440,3), dtype=np.uint8 )
 #2016-12-27 15:08:38
