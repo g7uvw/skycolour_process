@@ -6,7 +6,7 @@ from scipy.misc import imsave
 import math
 
 # Create a 1024x1024x3 array of 8 bit unsigned integers
-data = np.zeros( (50,1440,3), dtype=np.uint8 )
+data = np.zeros( (200,1440,3), dtype=np.uint8 )
 #2016-12-27 15:08:38
 with open("minutedata.csv", 'rb') as f:
     reader = csv.reader(f, delimiter=',')
