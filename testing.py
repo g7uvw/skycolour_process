@@ -7,10 +7,10 @@ import pandas as pd
 import io
 
 # Create a 100x1440x3 array of 8 bit unsigned integers
-data = np.zeros( (300,1440,3), dtype=np.uint8 )
+data = np.zeros( (400,1440,3), dtype=np.uint8 )
 
 
-z = pd.read_csv('minutedata.csv')
+z = pd.read_csv('md.csv')
 z = z[~z.time.duplicated()]
 z['time'] = pd.to_datetime(z['time'])
 
