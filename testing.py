@@ -10,7 +10,7 @@ import io
 data = np.zeros( (400,1440,3), dtype=np.uint8 )
 
 
-z = pd.read_csv('md.csv')
+z = pd.read_csv('minutedata-validdata-ends-9-7-2017.csv')
 z = z[~z.time.duplicated()]
 z['time'] = pd.to_datetime(z['time'])
 
